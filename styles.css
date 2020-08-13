@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas:
+  "nav"
+  "content"
+  "footer";
+}
+
+/* Nav Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  grid-area: nav;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-title {
+  margin: 0 0 0 10px;
+}
+
+.nav-title-link {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.content {
+  grid-area: content;
+}
