@@ -1,39 +1,60 @@
-.container {
-  display: grid;
-  grid-template-rows: 10% 80% 10%;
-  grid-template-areas:
-  "nav"
-  "content"
-  "footer";
-}
+@import "./css/blogCard.css";
+@import "./css/blogPost.css";
+@import "./css/navbar.css";
 
-/* Nav Styles */
-nav {
-  display: flex;
-  justify-content: center;
-  grid-area: nav;
-}
-
-img {
-  width: 30px;
-  height: 30px;
-}
-
-.nav-title {
-  margin: 0 0 0 10px;
-}
-
-.nav-title-link {
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  font-weight: bold;
+body {
+  margin: 0;
 }
 
 footer {
-  grid-area: footer;
+  border: 1px solid green;
+  padding: 5px;
 }
 
-.content {
-  grid-area: content;
+.page-header {
+  font-size: 22px;
+  text-align: center;
+  margin: 10px;
+  padding: 0;
 }
+
+.content-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  border: 1px solid purple;
+  justify-content: center;
+}
+
+/* Mobile Breakpoint */
+@media (min-width: 300px) and (max-width: 599px) {
+  .content-container {
+    background: lightgray;
+    grid-template-columns: 100% !important;
+    grid-template-areas:
+      "post-1"
+      "post-2"
+      "post-3";
+  }
+
+  .post-1 {
+    grid-area: post-1;
+  }
+
+  .post-2 {
+    grid-area: post-2;
+  }
+
+  .post-3 {
+    grid-area: post-3;
+  }
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 600px) and (max-width: 900px) {
+  .content-container {
+    background: lightgreen;
+    grid-template-columns: 50% 50% !important;
+  }
+}
+
+
