@@ -21,7 +21,6 @@ footer {
 .content-container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  border: 1px solid purple;
   justify-content: center;
 }
 
@@ -49,11 +48,24 @@ footer {
   }
 }
 
-/* Tablet Breakpoint */
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 300px) and (max-width: 600px) {
   .content-container {
-    background: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 601px) and (max-width: 900px) {
+  .content-container {
     grid-template-columns: 50% 50% !important;
+  }
+}
+
+@media (min-width: 901px) {
+  .content-container {
+    margin-bottom: 200px;
   }
 }
 
