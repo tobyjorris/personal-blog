@@ -4,11 +4,13 @@
 
 body {
   margin: 0;
+  background: #9DB4AB;
+  height: 100%;
 }
 
 footer {
-  border: 1px solid green;
-  padding: 5px;
+  position: absolute;
+  bottom: 0;
 }
 
 .page-header {
@@ -19,6 +21,7 @@ footer {
 }
 
 .content-container {
+  grid-area: body;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   justify-content: center;
@@ -27,7 +30,6 @@ footer {
 /* Mobile Breakpoint */
 @media (min-width: 300px) and (max-width: 599px) {
   .content-container {
-    background: lightgray;
     grid-template-columns: 100% !important;
     grid-template-areas:
       "post-1"
@@ -46,13 +48,9 @@ footer {
   .post-3 {
     grid-area: post-3;
   }
-}
 
-@media (min-width: 300px) and (max-width: 600px) {
-  .content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  footer {
+    position: relative;
   }
 }
 
@@ -61,12 +59,12 @@ footer {
   .content-container {
     grid-template-columns: 50% 50% !important;
   }
-}
 
-@media (min-width: 901px) {
-  .content-container {
-    margin-bottom: 200px;
+  footer {
+    position: relative;
   }
 }
+
+
 
 

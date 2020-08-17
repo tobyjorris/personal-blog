@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  background: lightgrey;
+  background: #878E76;
   padding: 10px;
   margin: 0 auto;
 }
@@ -15,6 +15,10 @@ a {
   float: end;
   font-size: 22px;
   color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 4px;
+  background: #BBDB9B;
 }
 
 img {

@@ -1,1 +1,96 @@
+@import "./navbar.css";
+
+body {
+  margin: 0;
+}
+
+.blogPost-container {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 100px 200px 200px 200px 200px;
+  grid-template-columns: 600px 200px;
+  grid-gap: 5px;
+  grid-template-areas:
+  "hd about"
+  "bdy archives"
+  "bdy links"
+  "bdy ."
+  "bdy .";
+  margin-top: 15px;
+}
+
+.post-header {
+  grid-area: hd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post-header > h1 {
+  margin: 0;
+}
+
+.blogCredits > p {
+  margin: 0;
+}
+
+.blog-body {
+  grid-area: bdy;
+}
+
+.about,
+.archives,
+.links {
+  padding: 5px;
+  width: 100%;
+}
+
+.about {
+  grid-area: about;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about > p {
+  margin: 0;
+}
+
+.about > h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.links {
+  grid-area: links;
+  display: flex;
+  flex-direction: column;
+  justify-self: left;
+}
+
+.links > a,
+.archives > a {
+  margin: 0;
+  align-self: start;
+  text-decoration: underline;
+}
+
+.archives {
+  grid-area: archives;
+  display: flex;
+  flex-direction: column;
+  justify-self: left;
+}
+
+q {
+  margin-left: 25px;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 8px 0 8px 0;
+}
 
