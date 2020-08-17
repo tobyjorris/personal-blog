@@ -94,3 +94,28 @@ p {
   margin: 8px 0 8px 0;
 }
 
+/* Mobile Breakpoint */
+@media (min-width: 300px) and (max-width: 600px) {
+  .blogPost-container {
+    display: grid;
+    grid-template-areas:
+      "hd hd"
+      "bdy bdy"
+      "links archives";
+    grid-template-columns: 50%;
+    grid-template-rows: auto;
+    padding: 10px;
+  }
+
+  .about {
+    display: none;
+  }
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 601px) and (max-width: 900px) {
+  .blogPost-container {
+    grid-template-columns: 450px 150px;
+  }
+}
+
