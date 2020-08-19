@@ -27,6 +27,11 @@ footer {
   justify-content: center;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+}
+
 /* Mobile Breakpoint */
 @media (min-width: 300px) and (max-width: 599px) {
   .content-container {
