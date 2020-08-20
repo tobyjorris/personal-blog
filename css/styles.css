@@ -1,6 +1,6 @@
-@import "./css/blogCard.css";
-@import "./css/blogPost.css";
-@import "./css/navbar.css";
+@import "./blogCard.css";
+@import "./blogPost.css";
+@import "./navbar.css";
 
 body {
   margin: 0;
